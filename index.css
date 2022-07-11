@@ -1,0 +1,547 @@
+
+html{
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+
+section{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* navbar */
+.navbar {
+    background-color: #fff;
+    font-size: 20px !important;
+    padding: 1% !important;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.nav-item {
+    padding: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #FF0000;
+    color: #fff !important;
+    transform: scale(1.2);
+}
+
+
+.fixed-tops{
+    
+ z-index: 999;
+}
+.Logo {
+    width: 50px;
+}
+.active {
+    background-color: #FF0000;
+    color: #fff !important;
+}
+
+/* Home */
+#Home {
+    margin: 0;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col1 {
+    flex-basis: 40%;
+    position: relative;
+
+}
+
+.col1 h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.col1 h2 {
+    font-size: 20px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 20px;
+    line-height: 1.5;
+}
+
+.button {
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    background-color: #FF0000;
+    text-decoration: none;
+    border-radius: 10px;
+    
+}
+.button:hover{
+  color: #FF0000;
+  background-color: #fff;
+  border: 1px solid;
+
+}
+.button-don {
+    border: 0;
+    padding: 5px 5px;
+    outline: none;
+    color: #FF0000;
+    font-size: 30px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar-toggler{
+    background-color: #FF0000;
+}
+
+.col1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #4d4b4b, #070707);
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.col2 {
+    position: relative;
+    flex-basis: 60%;
+    align-items: center;
+}
+
+.col2 .Land-pic {
+    width: 100%;
+}
+
+@media only screen and (max-width:800px) {
+    .rows {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col2 .Land-pic {
+        align-content: center;
+        width: 90%;
+    }
+
+    .color-box {
+        transform: translateX(20px);
+    }
+
+    .col1 {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .col1 h1 {
+        font-size: 35px;
+    }
+
+    .col1 h2 {
+        font-size: 15px;
+    }
+}
+
+
+/* featured */
+
+.featured-img {
+    height: 350px;
+    width: 100%;
+}
+
+.featured-img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Accomplishments */
+.section-title{
+    margin: 2%;
+    margin-top: 100px;
+}
+.section-title h1{
+  font-size: 40px;
+  font-weight: 600;
+  color: #041791;
+}
+.hr-title{
+ font-size: 20px;
+ color: #FF0000;
+ border-top: 10px solid;
+ opacity: 1;
+ width:30%; margin-left:35% !important; margin-right:35% !important;
+}
+
+.page-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Overlays for Accomplishments */
+.containers {
+    position: relative;
+    width: 100%;
+  }
+  
+  .images {
+    display: block;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .overlays {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color:#FF0000;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .containers:hover .overlays {
+    width: 100%;
+    left: 0;
+  }
+  
+  .texts {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    
+  }
+  .texts:hover {
+    background: #fff;
+    color: #FF0000;
+  }
+  
+  /* Second Overlays */
+  .containers2 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .images2 {
+    display: block;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .overlays2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#FF0000;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .containers2:hover .overlays2 {
+    width: 100%;
+  }
+  
+  .texts2 {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+
+ /* About us section */
+ #About{
+    margin-bottom: 50px;
+    margin-top: 100px;
+    background-color: #9ea0a90b;
+ }
+ .imagesex:hover{
+    transform: rotate(5deg);
+ }
+
+
+/* Donation */
+#Donates {
+    background-color: #FF0000;
+}
+.text-side{
+    margin: 5%;
+    color: #fff;
+  
+}
+.text-side h1 {
+    font-weight: 600;
+    font-size:xx-large;
+    font-size: 60px;
+}
+
+.text-side p {
+    font-size: 30px
+}
+
+.text-listr {
+    font-size: 20px;}
+.img-me {
+   align-items: center;
+   align-self: center;
+   float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUBMAIN */
+.submain {
+    width: 100%;
+    height: 500px;
+    background: url(./img/photo-submain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media only screen and (max-width:800px) {
+    .submain {
+        width: 100%;
+    }
+}
+
+
+.main-footer {
+    position: relative;
+    background: #001894;
+    color: #fff!important;
+}
+
+.footer-content {
+    position: relative;
+    padding: 85px 0px 80px 0px;
+}
+
+.footer-content:before {
+    position: absolute;
+    content: '';
+    width: 744px;
+    height: 365px;
+    top: 50px;
+    right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: float-bob;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: float-bob;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: float-bob;
+    -moz-animation-duration: 30s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: float-bob;
+    -ms-animation-duration: 30s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: float-bob;
+    -o-animation-duration: 30s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+.footer-content .logo-widget {
+    position: relative;
+    margin-top: -5px;
+}
+
+.footer-content .logo-widget .footer-social li {
+    position: relative;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.footer-content .logo-widget .footer-social li:last-child {
+    margin-right: 0px;
+}
+
+.footer-content .logo-widget .footer-social li a {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    color: #9ea0a9;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.footer-content .logo-widget .footer-social li a:hover {
+    color: #141414;
+    background: #ff5e14;
+}
+
+.footer-content .logo-widget .logo-box {
+    margin-bottom: 25px;
+    width: 110px;
+    background-color: #fff;
+}
+
+.footer-content .logo-widget .text p {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.footer-content .footer-title {
+    position: relative;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.footer-content .service-widget .list li {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-content .service-widget .list li a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.footer-content .service-widget .list li a:hover {
+    color: #ff5e14;
+}
+
+.footer-content .contact-widget p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+.footer-content .contact-widget .footer-title {
+    margin-bottom: 29px;
+}
+
+
+/** footer-bottom **/
+
+.footer-bottom {
+    position: relative;
+    background: #FF0000;
+    text-align: center;
+}
+
+.footer-bottom .copyright,
+.footer-bottom .copyright a,
+.footer-bottom .footer-nav li a {
+    position: relative;
+    color: #fdfeff;
+}
+
+.footer-bottom .copyright a:hover,
+.footer-bottom .footer-nav li a:hover {
+    color: #ff5e14;
+}
+
+.footer-bottom .footer-nav {
+    position: relative;
+}
+
+.footer-bottom .footer-nav li {
+    position: relative;
+    display: inline-block;
+    margin-left: 29px;
+}
+
+.footer-bottom .footer-nav li:first-child {
+    margin-left: 0px;
+}
+
+.footer-bottom .footer-nav li:before {
+    position: absolute;
+    content: '';
+    background: #9ea0a9;
+    width: 1px;
+    height: 14px;
+    top: 7px;
+    left: -18px;
+}
+
+.footer-bottom .footer-nav li:first-child:before {
+    display: none;
+}
+
+.logo-box img {
+    max-width: 100px;
+    align-self: center;
+    text-align: center;
+}
+
+/* Contact Modal Form */
+.modal-header {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.modal-content {
+    color: #070707;
+}
